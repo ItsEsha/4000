@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <script type="module">
+  import chart from "./d3-hierarchical-edge-bundling-ii.js";
+  chart().then(chart => document.querySelector("#chart").append(chart));
+  </script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="4000style.css">
+</head>
+<body>
+  <div class="dropdown">
+    Sort By
+    <select class="sort-by">
+      <option value="chrono">Chronology</option>
+      <option value="senti">Sentiment</option>
+    </select>
+  </div>
+
+<script type="text/javascript">
+     
+      d3.select(".sort-by")
+      .on("change", function() {
+        var attribute = d3.select(this).property("value");
+        sortLollipops(attribute, 1);
+      });
+
+//SORT FN - have to edit for dataset
+       function sortBy(data, attribute, order) {
+      data.sort(function(a, b) {
+        if(a[attribute] < b[attribute]) return -1 * order;
+        if(a[attribute] > b[attribute]) return 1 * order;
+        return 0;
+      });
+    }
+    
+    //define margins
+    var margin = {top: 120, right: 100, bottom: 50, left: 150};
+    
+    var width = 960 - margin.left - margin.right,
+        height = 500 - margin.top - margin.bottom;
+
+    //for legend
+    var svg = d3.select("body").append("svg")
+          .attr("width", width + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+         var classToPos = {
+      "lollipop-hineg": "hineg",
+      "lollipop-neg" : "neg",
+      "lollipop-ntrl": "ntrl",
+      "lollipop-pos" : "pos",
+      "lollipop-hipos": "hipos"
+    }
+    
+    //Add Legend
+    var legendLabels = [
+      {label: "Highly Negative", class: "lollipop-hineg"}, 
+      {label:"Negative", class: "lollipop-neg"},
+      {label: "Neutral", class: "lollipop-ntrl"},
+      {label:"Positive", class:"lollipop-pos"},
+      {label: "Highly Positive", class: "lollipop-hipos"}
+    ];
+    
+  var legendX = 200,
+     legendY = -50,
+     spaceBetween = 100,
+        titleOffset = -120;
+    
+    //positionin legend
+    var legend = svg.append("g")
+      .attr("transform", "translate(" + [legendX, legendY] + ")");
+        
+    legend.append("g")
+      .attr("class", "title")
+      .append("text")
+      .attr("x", titleOffset)
+      .text("Sentiment Scale: ")
+
+       // Try using Susie Lu's d3-legend
+    // add circles
+    legend.selectAll("circle")
+      .data(legendLabels) 
+    .enter().append("circle")
+      .attr("cx", function(d, i) {
+        return spaceBetween * i;
+      })
+      .attr("cy", -4)
+      .attr("r", 5)
+      .attr("class", function(d) { return d.class });
+    
+    // add legend labels
+    legend.append("g")
+      .selectAll("text")
+      .data(legendLabels)
+    .enter().append("text")
+      .attr("x", function(d, i) {
+        return spaceBetween * i + 10;
+      })  
+      .text(function(d) { return d.label });
+    
+    // tooltips
+    var div = d3.select("body").append("div")
+      .attr("class", "tooltip")
+      .style("opacity", 0);
+    
+    //circle colours for the comment sents
+    var posToColour = {
+      hineg: "#ff6666",
+      neg: "#ff9966",
+      ntrl: "lightgrey",
+      pos: "#adebeb",
+     hipos: "#99e699"
+    };
+
+//to create the actual chart
+     var y = d3.scaleBand()
+      .range([0, height])
+      .paddingInner(0.5)
+      .paddingOuter(0.7);
+    
+    var x = d3.scaleLinear()
+      .range([0, width]);
+    
+    var lineGenerator = d3.line();
+
+    var axisLinePath = function(d) {
+      return lineGenerator([[x(d) + 0.5, 0], [x(d) + 0.5, height]]);
+    };
+    
+    var lollipopLinePath = function(d) {
+      return lineGenerator([[x(d.min), 0], [x(d.max), 0]]);
+    };
+    
+    var selectionLine,
+        lollipops,
+        yAxis,
+        yAxisGroup,
+        xAxis,
+        xAxisGroup,
+        axisLines,
+        lollipopsGroup;    
+     
+     var hinegCircles,
+        negCircles,
+        ntrlCircles,
+        posCircles,
+       hiposCircles;
+
+//IMPORT DATASET
+
+var dataset;
+var url = "dataset.json"
+d3.json(url, function(error, data){
+     if (error) throw error;
+      
+      dataset = data.comment;
+    // use -1 to flip ordering
+     sortBy(dataset, "sentiment", 1);
+      
+      y.domain(dataset.map(function(d) { return d.systemlabel }));
+      x.domain([0, d3.max(data, function(d) { return d.sentiment })]);
+      x.nice();
+      
+      yAxis = d3.axisLeft().scale(y)
+        .tickSize(0);
+    
+      /*xAxis = d3.axisTop().scale(x)
+        .tickFormat(function(d,i) {
+          if (i == 0) {
+            return "£0"
+          } else {
+            return d3.format(".2s")(d); 
+          }*/
+      });
+
+//IS NOT CREATING LINES?????????????????????????
+  yAxisGroup = svg.append("g")
+        .attr("class", "y-axis-group");
+      
+      yAxisGroup.append("g")
+        .attr("class", "y-axis")
+        .attr("transform", "translate(-20, 0)")
+        .call(yAxis)
+        .select(".domain")
+        .attr("opacity", 0);
+
+      xAxisGroup = svg.append("g")
+        .attr("class", "x-axis-group");
+      
+      xAxisGroup.append("g")
+        .attr("class", "x-axis")
+        .call(xAxis);
+
+      axisLines = svg.append("g")
+        .attr("class", "grid-lines");
+      
+      axisLines.selectAll("path")
+        .data(x.ticks())
+      .enter().append("path")
+        .attr("class", "grid-line")
+        .attr("d", axisLinePath);
+    
+      selectionLine = xAxisGroup.append("g")
+        .attr("class", "interactive")
+        .append("path")
+        .attr("class", "selection-line")
+        .attr("d", function() {
+          return lineGenerator([[width / 2, 0],[width / 2, height]])
+        })
+        .attr("opacity", 0);
+      
+      lollipopsGroup = svg.append("g").attr("class", "lollipops");
+    
+      lollipops = lollipopsGroup.selectAll("g")
+        .data(dataset)
+      .enter().append("g")
+        .attr("class", "lollipop")
+        .attr("transform", function(d) {
+          return "translate(0," + (y(d.systemlabel) + (y.bandwidth() / 2)) + ")";
+        })
+
+//CREATE DOTS FOR THE DATA -- makes the legend go away and no dots ANYWHERE???????
+/* lollipops.append("path")
+        .attr("class", "lollipop-line")
+        .attr("d", lollipopLinePath);
+      
+      hinegCircles = lollipops.append("circle")
+      .attr("class", "lollipop-hineg")
+      .attr("r", 5)
+      .attr("cx", function(d) { 
+        return x(d.sentiment < -1); 
+      })
+
+      negCircles = lollipops.append("circle")
+      .attr("class", "lollipop-neg")
+      .attr("r", 5)
+      .attr("cx", function(d) { 
+        return x(d.sentiment <0 && d.sentiment>=-1); 
+      })
+      ntrlCircles = lollipops.append("circle")
+        .attr("class", "lollipop-ntrl")
+        .attr("r", function(d) {
+            return x(d.sentiment ==0); 
+        }
+        .attr("cx", function(d) { 
+          if (d.ntrl === "N/A") {
+           return x(d.sentiment == 0); 
+        }
+        
+      posCircles = lollipops.append("circle")
+        .attr("class", "lollipop-pos")
+        .attr("r", 5)
+        .attr("cx", function(d) { 
+          return x(d.sentiment>0 && d.sentiment<=1); 
+        })
+
+         hiposCircles = lollipops.append("circle")
+        .attr("class", "lollipop-hipos")
+        .attr("r", 5)
+        .attr("cx", function(d) { 
+          return x(d.sentiment>1); 
+        });*/
+   
+   //SORT LOLLIPOPS -- edit for my dataset
+   /*function sortLollipops(attribute, ordering) {
+      sortBy(dataset, attribute, 1);
+      
+      y.domain(payRatios.map(function(d) { return d.name })).copy();
+      
+      if (landscape) {
+        lollipops
+          .transition()
+          .attr("transform", function(d) {
+            return "translate(" + [0, (y(d.name) + y.bandwidth() / 2)] + ")";
+          });
+        
+        yAxisGroup.select(".y-axis")
+          .transition()
+          .call(yAxis);
+      } else {
+         lollipops
+          .transition()
+          .attr("transform", function(d) {
+            return "translate(" + [(y(d.name) + y.bandwidth() / 2), 0] + ")";
+          });
+        
+         xAxisGroup.select(".x-axis")
+          .transition()
+          .call(yAxis);
+      }*/
+      
+  
+  //  }
+</script>
+</body>

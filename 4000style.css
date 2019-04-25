@@ -1,0 +1,86 @@
+ body {
+      font-family: sans-serif;
+      font-size: 12px;
+      margin: 0;
+    }
+    
+    .checkbox {
+    	position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+    
+    .dropdown {
+    	position: absolute;
+      top: 15px;
+      left: 15px;
+    }
+    
+    text {
+      font-size: 12px;
+    }
+    
+    .title {
+      font-weight: bold;
+    }
+    
+    .grid-line {
+      stroke: black;
+      opacity: 0.2;
+    }
+    
+    .rect-label {
+      stroke: black;
+    }
+    
+    .selection-line {
+      stroke: black;
+      stroke-dasharray: 5,5;
+    }
+    
+    .hover-label {
+      background-color: blue;
+    }
+    
+        
+    circle {
+      stroke-width: 1px;
+      stroke: black;
+    }
+    
+    circle.lollipop-hineg {
+      fill: #ff6666;
+      stroke: #ff6666;
+    }
+
+    .lollipop-neg{
+      fill:#ff9966;
+      stroke:#ff9966;
+    }
+
+
+    .lollipop-pos{
+      fill:  #adebeb;
+      stroke:  #adebeb ;
+    }
+    
+    .lollipop-hipos {
+      fill: #99e699;
+      stroke: #99e699;
+    }
+        
+    .lollipop-ntrl {
+      fill: lightgrey;
+      stroke: lightgrey;
+    }
+    
+    div.tooltip {
+      position: absolute;
+      text-align: center;
+      padding: 5px;
+      font: 12px sans-serif;		
+      background: white;	
+      border: 1px black solid;	
+      border-radius: 4px;
+      pointer-events: none;	
+    }

@@ -1,0 +1,749 @@
+{
+  "totalTopics": "4",
+  "topics": [
+    {
+      "topicID": 1,
+      "strength": 88,
+      "labels": [
+        {
+          "phrase": "army security lapse",
+          "prob": 0.2
+        },
+        {
+          "phrase": " army hacker",
+          "prob": 0.2
+        },
+        {
+          "phrase": " sensitive army servers",
+          "prob": 0.2
+        },
+        {
+          "phrase": " army corps",
+          "prob": 0.2
+        },
+        {
+          "phrase": " troubling major army security lapse",
+          "prob": 0.2
+        }
+      ]
+    },
+    {
+      "topicID": 2,
+      "strength": 7,
+      "labels": [
+        {
+          "phrase": "base",
+          "prob": 0.367826820806
+        },
+        {
+          "phrase": " makes order",
+          "prob": 0.261955329161
+        },
+        {
+          "phrase": " balls",
+          "prob": 0.260373021189
+        },
+        {
+          "phrase": " turkey",
+          "prob": 0.0552599084916
+        },
+        {
+          "phrase": " time",
+          "prob": 0.0545849203523
+        }
+      ]
+    },
+    {
+      "topicID": 3,
+      "strength": 8,
+      "labels": [
+        {
+          "phrase": "information week",
+          "prob": 0.170144009755
+        },
+        {
+          "phrase": " week running",
+          "prob": 0.170144009755
+        },
+        {
+          "phrase": " simple information security agents",
+          "prob": 0.164927995123
+        },
+        {
+          "phrase": " war information",
+          "prob": 0.164927995123
+        },
+        {
+          "phrase": " sensitive information",
+          "prob": 0.164927995123
+        },
+        {
+          "phrase": " serious information",
+          "prob": 0.164927995123
+        }
+      ]
+    },
+    {
+      "topicID": 4,
+      "strength": 80,
+      "labels": [
+        {
+          "phrase": "military security",
+          "prob": 0.166666666667
+        },
+        {
+          "phrase": " military battle",
+          "prob": 0.166666666667
+        },
+        {
+          "phrase": " military networks",
+          "prob": 0.166666666667
+        },
+        {
+          "phrase": " military that1",
+          "prob": 0.166666666667
+        },
+        {
+          "phrase": " usual military contracting companies",
+          "prob": 0.166666666667
+        },
+        {
+          "phrase": " public military websites",
+          "prob": 0.166666666667
+        }
+      ]
+    }
+  ],
+  "author": "timothy",
+  "date": "1243498080000",
+  "title": "Hackers Breached US Army Servers",
+  "comment": [
+    {
+      "systemtopicid": 1,
+      "sentiment": -0.53,
+      "systemlabel": "army security lapse",
+      "goldlabel": "hackers breaching US army servers",
+      "sentid": "1",
+      "sentComment": "An anonymous reader writes A Turkish hacking ring has broken into 2 sensitive US Army servers according to a new investigation uncovered by InformationWeek.The hackers who go by the name m0sted and are based in Turkey penetrated servers at the Armys McAlester Ammunition Plant in Oklahoma in January. Users attempting to access the site were redirected to a page featuring a climatechange protest. In Sept 2007 the hackers breached Army Corps of Engineers servers. That hack sent users to a page containing antiAmerican and antiIsraeli rhetoric. The hackers used simple SQL Server injection techniques to gain access.Thats troubling because it shows a major Army security lapse and also the ability to bypass supposedly sophisticated Defense Department tools and procedures designed to prevent such breaches."
+    }
+  ],
+  "children": [
+    {
+      "commentid": "28129295",
+      "author": "Anonymous1",
+      "parent": "",
+      "date": "1243501800000",
+      "modeclass": "None",
+      "modescore": "0",
+      "title": "wood for the trees",
+      "comment": [
+        {
+          "systemtopicid": 4,
+          "sentiment": -0.8,
+          "systemlabel": "military security",
+          "goldlabel": "hackers breaching US army servers",
+          "sentid": "8",
+          "sentComment": "when you are busy trying to defend against the most advanced crackers around and whatever complex tools they are using its probably easy to overlook the simpler stuff",
+          "sentimentwords": []
+        }
+      ],
+      "children": [
+        {
+          "commentid": "28129909",
+          "author": "Anonymous16",
+          "parent": "28129295",
+          "date": "1243504140000",
+          "modeclass": "None",
+          "modescore": "0",
+          "title": "Re:wood for the trees",
+          "comment": [
+            {
+              "systemtopicid": 4,
+              "sentiment": -1.2,
+              "systemlabel": "military security",
+              "goldlabel": "hackers breaching US army servers",
+              "sentid": "78",
+              "sentComment": "I have worked with the U.S. Army Network Engineers. I was apalled at their lack of knowledge and understanding of security.",
+              "sentimentwords": [
+                {
+                  "word": "apalled",
+                  "polarity": -4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentid": "28131615",
+          "author": "AHuxley",
+          "parent": "28129295",
+          "date": "1243511640000",
+          "modeclass": "None",
+          "modescore": "1",
+          "title": "Re:wood for the trees",
+          "comment": [
+            {
+              "systemtopicid": 4,
+              "sentiment": 0,
+              "systemlabel": "military security",
+              "goldlabel": "vulnerability of microsoft servers",
+              "sentid": "127",
+              "sentComment": "most advanced and Microsoft?",
+              "sentimentwords": []
+            },
+            {
+              "systemtopicid": 4,
+              "sentiment": 0,
+              "systemlabel": "military security",
+              "goldlabel": "vulnerability of microsoft servers",
+              "sentid": "128",
+              "sentComment": "Giggles :  Gary McKinnon showed the way in :",
+              "sentimentwords": []
+            }
+          ]
+        },
+        {
+          "commentid": "28133595",
+          "author": "alfs_boner",
+          "parent": "28129295",
+          "date": "1243522680000",
+          "modeclass": "None",
+          "modescore": "-1",
+          "title": "Re:wood for the trees",
+          "comment": [
+            {
+              "systemtopicid": 4,
+              "sentiment": -1.75,
+              "systemlabel": "military security",
+              "goldlabel": "hackers vs crackers",
+              "sentid": "157",
+              "sentComment": "when you are busy trying to defend against the most advanced crackers around Are you serious? Are you really going to parrot that asinine hacker vs. cracker bullshit in 2009?",
+              "sentimentwords": []
+            },
+            {
+              "systemtopicid": 4,
+              "sentiment": -0.67,
+              "systemlabel": "military security",
+              "goldlabel": "hackers vs crackers",
+              "sentid": "160",
+              "sentComment": "Youre like one of those stranded Japanese soldiers who thinks World War II is still going on.",
+              "sentimentwords": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentid": "28129443",
+      "author": "Anonymous6",
+      "parent": "",
+      "date": "1243502220000",
+      "modeclass": "Insightful",
+      "modescore": "5",
+      "title": "I thought Information Week was sensible",
+      "comment": [
+        {
+          "systemtopicid": 3,
+          "sentiment": -0.93,
+          "systemlabel": "information week",
+          "goldlabel": "sensationalism about the level of risk in the breach",
+          "sentid": "20",
+          "sentComment": "So much for Information Week being reasoned and sensible. Equally troubling is the fact that the hacks appear to have originated outside the United States. Turkey is known to harbor significant elements of the alQaida network. Hooray for sensationalism",
+          "sentimentwords": []
+        }
+      ],
+      "children": [
+        {
+          "commentid": "28130035",
+          "author": "Anonymous20",
+          "parent": "28129443",
+          "date": "1243504680000",
+          "modeclass": "None",
+          "modescore": "1",
+          "title": "Re:I thought Information Week was sensible",
+          "comment": [
+            {
+              "systemtopicid": 3,
+              "sentiment": -1,
+              "systemlabel": "information week",
+              "goldlabel": "sensationalism about the level of risk in the breach",
+              "sentid": "87",
+              "sentComment": "Yeah thats pretty terrible. You can be equally unclear if they had links to Nazism or the Republican National Committee. Too bad spinspotter dotbombed  http:spinspotter.com spinspotter.com",
+              "sentimentwords": [
+                {
+                  "word": "bad",
+                  "polarity": -4.5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentid": "28129347",
+      "author": "Anonymous2",
+      "parent": "",
+      "date": "1243501920000",
+      "modeclass": "Funny",
+      "modescore": "5",
+      "title": "I know this is old but",
+      "comment": [
+        {
+          "systemtopicid": 2,
+          "sentiment": 0,
+          "systemlabel": "base",
+          "goldlabel": "OFFTOPIC",
+          "sentid": "10",
+          "sentComment": "All your base are belong to us",
+          "sentimentwords": []
+        }
+      ],
+      "children": [
+        {
+          "commentid": "28131471",
+          "author": "Onymous_Coward",
+          "parent": "28129347",
+          "date": "1243510980000",
+          "modeclass": "None",
+          "modescore": "1",
+          "title": "Re:I know this is old but",
+          "comment": [
+            {
+              "systemtopicid": 2,
+              "sentiment": 0,
+              "systemlabel": "base",
+              "goldlabel": "OFFTOPIC",
+              "sentid": "126",
+              "sentComment": "Take off every Information Aggressor Squadron",
+              "sentimentwords": []
+            }
+          ]
+        },
+        {
+          "commentid": "28132977",
+          "author": "Anonymous31",
+          "parent": "28129347",
+          "date": "1243518600000",
+          "modeclass": "None",
+          "modescore": "0",
+          "title": "Re:I know this is old but",
+          "comment": [
+            {
+              "systemtopicid": 2,
+              "sentiment": 0,
+              "systemlabel": "base",
+              "goldlabel": "OFFTOPIC",
+              "sentid": "153",
+              "sentComment": "Make your time. HAHAHAHAHA",
+              "sentimentwords": []
+            }
+          ]
+        },
+        {
+          "commentid": "28145031",
+          "author": "Anonymous42",
+          "parent": "28129347",
+          "date": "1243597620000",
+          "modeclass": "None",
+          "modescore": "0",
+          "title": "Re:I know this is old but",
+          "comment": [
+            {
+              "systemtopicid": 2,
+              "sentiment": 0,
+              "systemlabel": "base",
+              "sentComment": "except the bases in Turkey",
+              "sentimentwords": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentid": "28129557",
+      "author": "Anonymous9",
+      "parent": "",
+      "date": "1243502640000",
+      "modeclass": "None",
+      "modescore": "1",
+      "title": "any good military has",
+      "comment": [
+        {
+          "systemtopicid": 1,
+          "sentiment": 2,
+          "systemlabel": "army security lapse",
+          "goldlabel": "cyberwarfare",
+          "sentid": "32",
+          "sentComment": "1. good tactics 2. the ability to adapt new tactics as previously good tactics become irrelevantone way a tactic becomes irrelevant is changing battlefield conditions. you dont fight in a swamp the way you fight in a desert for instancewell the internet is valid battlefield. and you fight on it with new tactics. it remains to be seen now if the us military understands that1. it needs to take this battlefield seriously2. it can develop good tactics to fight on this battlefieldbut as it stands now a bunch of teenagers are thoroughly and repeatedly trouncing the us military",
+          "sentimentwords": [
+            {
+              "word": "stands",
+              "polarity": 1
+            },
+            {
+              "word": "good",
+              "polarity": 3
+            },
+            {
+              "word": "thoroughly",
+              "polarity": 2
+            }
+          ]
+        }
+      ],
+      "children": [
+        {
+          "commentid": "28129701",
+          "author": "Anonymous11",
+          "parent": "28129557",
+          "date": "1243503120000",
+          "modeclass": "None",
+          "modescore": "0",
+          "title": "Re:any good military has",
+          "comment": [
+            {
+              "systemtopicid": 1,
+              "sentiment": -0.7,
+              "systemlabel": "army security lapse",
+              "goldlabel": "server security and firewall",
+              "sentid": "45",
+              "sentComment": "Um...no.If they had managed to get passed a single firewall or router I would be impressed. As it stands they redirected links on a public facing webserver...yawn. I work with hundreds of other IT techs whos job it is to monitor the Army network down to every single interface and we do it 247.",
+              "sentimentwords": []
+            }
+          ]
+        },
+        {
+          "commentid": "28129787",
+          "author": "cdrguru",
+          "parent": "28129557",
+          "date": "1243503480000",
+          "modeclass": "Interestin",
+          "modescore": "3",
+          "title": "Re:any good military has",
+          "comment": [
+            {
+              "systemtopicid": 1,
+              "sentiment": 0.84,
+              "systemlabel": "army security lapse",
+              "goldlabel": "vietnam and iraq warfare",
+              "sentid": "52",
+              "sentComment": "The US military is pretty much incapable of fighting a guerrilla war where the combatents are intermixed with civilians and civilian casualties are forbidden. It made Vietnam very difficult and it has made Iraq difficult as well.What we have is a guerrilla war against hackers where they are effectiely shielded in most cases by the ISP and their own countrys law enforcement. The end result is almost an unwinnable war.We are winning in Iraq by ending the use of civilians as shields. We won in Vietnam by separating the combatants from the civilians. It is going to take that sort of effort to win against hackers crackers and identity thieves. Unfortunately right now the effort required to do this is intense enough that it is many many times the losses so far. So I dont think they are going to do anything until the losses mount up a lot more.What makes this worse is in order to effectively combat these people it is going to take either the cooperation of foreign law enforcement or just going around them. Neither one is going to make these other countries want to be our friends but they seem to be happy with the hackers running around doing whatever.",
+              "sentimentwords": [
+                {
+                  "word": "friends",
+                  "polarity": 2
+                },
+                {
+                  "word": "want",
+                  "polarity": 1
+                },
+                {
+                  "word": "happy",
+                  "polarity": 8
+                }
+              ]
+            }
+          ],
+          "children": [
+            {
+              "commentid": "28130013",
+              "author": "Anonymous19",
+              "parent": "28129787",
+              "date": "1243504500000",
+              "modeclass": "Insightful",
+              "modescore": "1",
+              "title": "Re:any good military has",
+              "comment": [
+                {
+                  "systemtopicid": 1,
+                  "sentiment": 0,
+                  "systemlabel": "army security lapse",
+                  "goldlabel": "vietnam and iraq warfare",
+                  "sentid": "85",
+                  "sentComment": "The US I presume thats who youre referring to won in Vietnam? By whose estimation?",
+                  "sentimentwords": []
+                }
+              ]
+            },
+            {
+              "commentid": "28130503",
+              "author": "Anonymous22",
+              "parent": "28129787",
+              "date": "1243506360000",
+              "modeclass": "Insightful",
+              "modescore": "1",
+              "title": "Re:any good military has",
+              "comment": [
+                {
+                  "systemtopicid": 1,
+                  "sentiment": -1.8,
+                  "systemlabel": "army security lapse",
+                  "goldlabel": "vietnam and iraq warfare",
+                  "sentid": "97",
+                  "sentComment": "Sorry but either you watched too many movies or you failed all your history classes.No matter what Rambo Forest Gump and Doctor Manhattan did the US lost the war in Vietnam.",
+                  "sentimentwords": [
+                    {
+                      "word": "war",
+                      "polarity": -3
+                    },
+                    {
+                      "word": "failed",
+                      "polarity": -9
+                    },
+                    {
+                      "word": "lost",
+                      "polarity": -3
+                    },
+                    {
+                      "word": "too",
+                      "polarity": -9
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentid": "28130683",
+              "author": "JBdH",
+              "parent": "28129787",
+              "date": "1243507200000",
+              "modeclass": "None",
+              "modescore": "1",
+              "title": "Re:any good military has",
+              "comment": [
+                {
+                  "systemtopicid": 1,
+                  "sentiment": 0,
+                  "systemlabel": "army security lapse",
+                  "goldlabel": "vietnam and iraq warfare",
+                  "sentid": "98",
+                  "sentComment": "I didnt know the Viet Cong was operating in Iraq.",
+                  "sentimentwords": []
+                }
+              ]
+            },
+            {
+              "commentid": "28131093",
+              "author": "ultranova",
+              "parent": "28129787",
+              "date": "1243509000000",
+              "modeclass": "None",
+              "modescore": "1",
+              "title": "Re:any good military has",
+              "comment": [
+                {
+                  "systemtopicid": 1,
+                  "sentiment": 0.72,
+                  "systemlabel": "army security lapse",
+                  "goldlabel": "hackers breaching US army servers",
+                  "sentid": "110",
+                  "sentComment": "What you have is a few teenagers writing graffiti on the army bulletin board located outside the base. And yes the War on Vandals is likely unwinnable. However you might try declaring War on Exaggeration.We won in Vietnam by separating the combatants from the civilians. You didnt win in Vietnam you lost and fled.",
+                  "sentimentwords": []
+                }
+              ]
+            },
+            {
+              "commentid": "28131181",
+              "author": "Gizzmonic",
+              "parent": "28129787",
+              "date": "1243509420000",
+              "modeclass": "None",
+              "modescore": "1",
+              "title": "Re:any good military has",
+              "comment": [
+                {
+                  "systemtopicid": 1,
+                  "sentiment": 0.4,
+                  "systemlabel": "army security lapse",
+                  "goldlabel": "vietnam and iraq warfare",
+                  "sentid": "121",
+                  "sentComment": "We won in Vietnam by separating the combatants from the civilians.Are you Ho Chi Minh?",
+                  "sentimentwords": []
+                }
+              ]
+            },
+            {
+              "commentid": "28131827",
+              "author": "DeionXxX",
+              "parent": "28129787",
+              "date": "1243512780000",
+              "modeclass": "None",
+              "modescore": "1",
+              "title": "Re:any good military has",
+              "comment": [
+                {
+                  "systemtopicid": 1,
+                  "sentiment": 0,
+                  "systemlabel": "army security lapse",
+                  "goldlabel": "vietnam and iraq warfare",
+                  "sentid": "132",
+                  "sentComment": "Wait... we won Vietnam?",
+                  "sentimentwords": []
+                }
+              ]
+            },
+            {
+              "commentid": "28132077",
+              "author": "Anonymous23",
+              "parent": "28129787",
+              "date": "1243513980000",
+              "modeclass": "None",
+              "modescore": "0",
+              "title": "Re:any good military has",
+              "comment": [
+                {
+                  "systemtopicid": 1,
+                  "sentiment": -1.3,
+                  "systemlabel": "army security lapse",
+                  "goldlabel": "vietnam and iraq warfare",
+                  "sentid": "133",
+                  "sentComment": "We won in Vietnamummmmm.. assuming youre not Vietnamese you lost that war.",
+                  "sentimentwords": [
+                    {
+                      "word": "war",
+                      "polarity": -3
+                    },
+                    {
+                      "word": "lost",
+                      "polarity": -3
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentid": "28132369",
+              "author": "Anonymous26",
+              "parent": "28129787",
+              "date": "1243515480000",
+              "modeclass": "None",
+              "modescore": "0",
+              "title": "Re:any good military has",
+              "comment": [
+                {
+                  "systemtopicid": 1,
+                  "sentiment": 0,
+                  "systemlabel": "army security lapse",
+                  "goldlabel": "vietnam and iraq warfare",
+                  "sentid": "139",
+                  "sentComment": "Is this a parallel universe or something ?",
+                  "sentimentwords": []
+                }
+              ]
+            },
+            {
+              "commentid": "28132377",
+              "author": "Anonymous27",
+              "parent": "28129787",
+              "date": "1243515480000",
+              "modeclass": "None",
+              "modescore": "0",
+              "title": "Re:any good military has",
+              "comment": [
+                {
+                  "systemtopicid": 1,
+                  "sentiment": -0.4,
+                  "systemlabel": "army security lapse",
+                  "goldlabel": "vietnam and iraq warfare",
+                  "sentid": "140",
+                  "sentComment": "Wait who and when won Vietnam? I thought the US ran with its tail between its legs?",
+                  "sentimentwords": []
+                }
+              ]
+            },
+            {
+              "commentid": "28132395",
+              "author": "Anonymous28",
+              "parent": "28129787",
+              "date": "1243515540000",
+              "modeclass": "None",
+              "modescore": "0",
+              "title": "Re:any good military has",
+              "comment": [
+                {
+                  "systemtopicid": 1,
+                  "sentiment": 0,
+                  "systemlabel": "army security lapse",
+                  "goldlabel": "vietnam and iraq warfare",
+                  "sentid": "142",
+                  "sentComment": "is that you Charlie?",
+                  "sentimentwords": []
+                }
+              ]
+            },
+            {
+              "commentid": "28132437",
+              "author": "Anonymous29",
+              "parent": "28129787",
+              "date": "1243515720000",
+              "modeclass": "None",
+              "modescore": "0",
+              "title": "Re:any good military has",
+              "comment": [
+                {
+                  "systemtopicid": 1,
+                  "sentiment": 0.67,
+                  "systemlabel": "army security lapse",
+                  "goldlabel": "vietnam and iraq warfare",
+                  "sentid": "143",
+                  "sentComment": "We are winning in Iraq. We won in Vietnam lol wut",
+                  "sentimentwords": []
+                }
+              ]
+            },
+            {
+              "commentid": "28133389",
+              "author": "AceofSpades19",
+              "parent": "28129787",
+              "date": "1243521120000",
+              "modeclass": "None",
+              "modescore": "1",
+              "title": "Re:any good military has",
+              "comment": [
+                {
+                  "systemtopicid": 1,
+                  "sentiment": 0,
+                  "systemlabel": "army security lapse",
+                  "goldlabel": "vietnam and iraq warfare",
+                  "sentid": "155",
+                  "sentComment": "So I dont think they are going to do anExcuse me? The US did not win the Vietnam War unless the US was aiming to make Vietnam a communist country and have lots of casualties.",
+                  "sentimentwords": [
+                    {
+                      "word": "lots",
+                      "polarity": -3.9
+                    },
+                    {
+                      "word": "not",
+                      "polarity": -1.5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentid": "28133929",
+              "author": "dbIII",
+              "parent": "28129787",
+              "date": "1243525200000",
+              "modeclass": "None",
+              "modescore": "1",
+              "title": "Wrong words  there is no war there",
+              "comment": [
+                {
+                  "systemtopicid": 1,
+                  "sentiment": -0.97,
+                  "systemlabel": "army security lapse",
+                  "goldlabel": "cyberwarfare",
+                  "sentid": "161",
+                  "sentComment": "Changing wording to create fiction in the hope that somebody gullible will hand over some cash is not the way to fight this increasingly organised and increasingly common criminal activity but unfortunately that is how the current head of the NSA and others scrambling for funding are doing it. One such idiot full of cyberhype recently showed he knew less about Trojans than anyone with even a passing knowlege of european culture let alone a computer professional ie. the Trojan horse lets the other nasty stuff in. Forget the guerrilla war against hackers bullshit since the people we really want to catch are fraudsters money launderers and the occassional trespasser onto military networks which makes them a spy and not some cyberterrorist. When we escalate the words into the realm of fantasy you end up with pointless running around in circles trying to catch fantastic supervillians that may not exist instead of looking at reality and catching those that do exist.",
+                  "sentimentwords": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
